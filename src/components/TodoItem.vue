@@ -7,6 +7,7 @@ const props = defineProps<{
 }>()
 
 // Here, we define the custom event `clicked` that we will emit with id of clicked todo.
+// We do this, so that the `App` component will now which exact todo was clicked.
 const emits = defineEmits<{
     clicked: [id: number],
 }>()
